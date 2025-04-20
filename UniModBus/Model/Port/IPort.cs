@@ -12,7 +12,11 @@ namespace UniModBus.Model.Port
         public void Close();
         public void Open();
 
-        public byte[] ReadData();
+        public byte[] ReadAllData();
+
+        public byte[] ReadData(int Timeout);
+
+        public byte[] ReadData(int bytesToRead, int Timeout);
 
         public void WriteData(byte[] data);
         public void WriteData(string data);
