@@ -11,12 +11,12 @@ namespace UniModBus.Model.DataStorage
     /// </summary>
     public class CurrentModbusDataStorage
     {
-        internal void AddNewValueToChannel(int channel, double value, double time)
+        public void AddNewValueToChannel(int channel, double value, double time)
         {
             throw new NotImplementedException();
         }
 
-        internal IEnumerable<int> GetAvailableChannels()
+        public IEnumerable<int> GetAvailableChannels()
         {
             throw new NotImplementedException();
         }
