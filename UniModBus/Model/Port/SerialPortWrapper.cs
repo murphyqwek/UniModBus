@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO.Ports;
 using System.Threading;
+using UniModBus.Model.Port.Interfaces;
 
 namespace UniModBus.Model.Port
 {
-    public class SerialPortWrapper : IPort
+    /// <summary>
+    /// Класс для считывания данных с последовательного порта
+    /// </summary>
+    public class SerialPortWrapper : IPortReadableWritable
     {
         private readonly SerialPort _serialPort;
 
