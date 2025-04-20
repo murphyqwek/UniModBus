@@ -12,6 +12,6 @@ namespace UniModBus.Model.Port.Interfaces
 
         public byte[] ReadData(int Timeout);
 
-        public byte[] ReadData(int bytesToRead, int Timeout);
+        public byte[] ReadData(int bytesToRead, int timeout);
     }
 }
